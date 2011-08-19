@@ -1,0 +1,10 @@
+{
+  "name": "virgin",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.4.4",
+    "jade": "0.14.2",
+    "socket.io": "0.7.9",
+    "stylus": "0.15.1"
+  }
+}
