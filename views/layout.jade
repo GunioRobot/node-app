@@ -2,9 +2,8 @@
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/application.css')
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js")
-    script(src='socket.io/socket.io.js')
-    script(src='js/soundmanager2.js')
-    script(src='js/client.js')
+    
+    != css('application')
+    != js('client')
+    
   body!= body

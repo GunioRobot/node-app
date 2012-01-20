@@ -1,3 +1,6 @@
+#= require jquery.min
+#= require soundmanager2
+
 jQuery ->
   
   soundManager.url = '/swfs/'
@@ -6,11 +9,6 @@ jQuery ->
   soundManager.useHighPerformance = true
   soundManager.wmode = 'transparent'
   soundManager.useFastPolling = true
-
-  soundManager.onready ->
   
-    socket = io.connect()
-
-    socket.on 'message', (data) ->
-      console.log data
-    
+  soundManager.onready ->
+    console.log "cool"

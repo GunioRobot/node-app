@@ -1,10 +1,12 @@
 {
-  "name": "virgin",
+  "name": "node",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.4.4",
+    "express": ">= 2.5.1",
+    "coffee-script": "*",
+    "stylus": "0.15.1",
+    "nib": "0.2.0",
     "jade": "0.14.2",
-    "socket.io": "0.7.9",
-    "stylus": "0.15.1"
+    "connect-assets": "2.1.7"
   }
 }
