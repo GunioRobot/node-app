@@ -16,15 +16,15 @@ app.configure ->
   app.use app.router
   app.use express.static __dirname + '/public'
   app.use require('connect-assets') buildFilenamer: (filename) -> filename
-  
+
 app.configure 'development', () ->
   app.use express.errorHandler dumpExceptions: true, showStack: true
-  
+
 app.configure 'production', () ->
   app.use express.errorHandler()
-  
+
 # Declare Express Routing & Listen
-  
+
 app.get '/', (req, res) -> res.render 'index', title: 'Test'
-  
+
 app.listen app.settings.port
